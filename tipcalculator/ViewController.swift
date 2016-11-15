@@ -21,8 +21,17 @@ class ViewController: UIViewController {
          tip.resignFirstResponder()
 
          result.isHidden = false
-         result.text = String(Double(money.text!)! * Double(tip.text!)! / 100)
+        
+        if money.text == "" || tip.text == "" {
+            result.text="0"
+        }
+        
+        else{
+             result.text = String(Double(money.text!)! * Double(tip.text!)! / 100)
+        }
+        
     }
+    
     
     //按按鈕收鍵盤
     
