@@ -23,7 +23,7 @@ class ViewController: UIViewController {
          result.isHidden = false
         
         if money.text == "" || tip.text == "" {
-            result.text="0"
+            result.text="ಠ╭╮ಠ"
         }
         
         else{
